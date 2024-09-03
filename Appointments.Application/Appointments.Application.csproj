@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Appointments.Domain\Appointments.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Configurations\" />
+    <None Remove="Dtos\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Helpers\" />
+    <None Remove="Services\" />
+    <None Remove="Dtos\Requests\" />
+    <None Remove="Dtos\Responses\" />
+    <None Remove="Dtos\Requests\Validations\" />
+    <None Remove="ExternalServices\" />
+    <None Remove="ExternalServices\Implementations\" />
+    <None Remove="ExternalServices\Interfaces\" />
+    <None Remove="Services\Implementations\" />
+    <None Remove="Services\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Dtos\Requests\" />
+    <Folder Include="Dtos\Responses\" />
+    <Folder Include="Dtos\Requests\Validations\" />
+    <Folder Include="ExternalServices\" />
+    <Folder Include="ExternalServices\Implementations\" />
+    <Folder Include="ExternalServices\Interfaces\" />
+    <Folder Include="Services\Implementations\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Appointments.UnitTests" />
+  </ItemGroup>
+</Project>
